@@ -1,23 +1,42 @@
+
+/* general-styles - File to define the global styles */
+
+/* import external fonts */
 @font-face{
   font-family: futura-pt_normal;
   src: url("../fonts/futura-pt.ttf");
 }
+@font-face{
+  font-family: futura-pt_light;
+  src: url("../fonts/futura-pt_light.ttf");
+}
+
+/* Definition of global css variables */
 :root{
   --font-nav-size: 11.9608px;
   --brown-color: #877673;
+  --brown-dark-color: #616161;
   --white-color: white;
   --blue-dark-color: #9db9d5;
   --main-font: futura-pt_normal;
+  --light-font: futura-pt_light;
 }
+
+/* box-size rules */
 *, body{
   border: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/* body tag styles */
 body{
   z-index: -2;
 }
 
+/* HEADER STYLES */
+
+/* nav styles */
 nav { 
   min-height: 150px;
   z-index: 1;
@@ -27,7 +46,6 @@ nav ul li a {
   font-family: var(--main-font);
   color: var(--brown-color);
   text-decoration: none;
-  
 }
 nav ul li a:hover{
   color: var(--brown-color);
@@ -36,13 +54,22 @@ nav .logos-nav svg{
   font-size: var(--font-nav-size);
   color: var(--brown-color);
 }
-
-nav button{
+nav .menu .menuContent a svg{
+  color: var(--brown-color);
+}
+nav div button{
   font-size: var(--font-nav-size);
   color: var(--white-color);
   background-color: var(--blue-dark-color);
   padding: 9.59168px 16.0181px;
   width: 60%;
+}
+nav .menu .menuContent button{
+  background-color: var(--brown-dark-color);
+  color: var(--white-color);
+  font-size: 16px;
+  padding: 15.36px 25.6512px;
+  width: 200px;
 }
 nav button:hover{
   opacity: 0.5;
@@ -52,6 +79,7 @@ nav .logos-nav a svg{
   height: 20px;
 }
 
+/* media quieries nav styles - 768px (break-point) */
 @media only screen and (max-width: 768px){
   nav .logos-nav a svg.cart{
     opacity: 0.5;
@@ -60,6 +88,7 @@ nav .logos-nav a svg{
   }
 }
 
+/* Full screen nav styles */
 .open {
   background-color: transparent;
   width: 30px;
@@ -70,7 +99,6 @@ nav .logos-nav a svg{
   position: relative;
   /* top: 8px; */
 }
-
 .open:before {
   content: "";
   background-color: var(--brown-color);
@@ -84,7 +112,6 @@ nav .logos-nav a svg{
   transform: rotate(0deg);
   transition: all 0.3s ease;
 }
-
 .open:after {
   content: "";
   background-color: var(--brown-color);
@@ -98,29 +125,21 @@ nav .logos-nav a svg{
   transform: rotate(0deg);
   transition: all 0.3s ease;
 }
-
 .menuOpen {
   width: 24px;
   height: 20px;
   display: block;
-  /* padding: 15px; */
   cursor: pointer;
-  /* float: right; */
 }
-
-
-
 .menu {
   top: 0;
   bottom: 0;
   position: fixed;
-  /* top: 0; */
   left: 0;
   max-height: auto;
   background: #D6EEF4;
   z-index:-1;
 }
-
 .menu label {
   width: 30px;
   height: 30px;
@@ -130,100 +149,62 @@ nav .logos-nav a svg{
   background-size: 100%;
   cursor: pointer;
 }
-
 .menu .menuContent {
-  /* border: 2px solid brown; */
-  min-height: 100vh;
-  max-height: auto;
-  overflow: scroll;
+  height: 460px;
   margin-top: 150px;
-  /* overflow: hidden; */
-  /* margin-top: 130px; */
-  /* border: 1px solid red; */
-  /* top: 50%; */
-  /* font-size: 54px; */
-  /* text-align: center; */
-  /* padding-bottom: 20px; */
-  /* margin-top: -170px; */
-  /* width: 100%; */
+  overflow: scroll;
 }
-
 .menu ul {
-  /* border: 1px solid white; */
   list-style: none;
-  /* height: auto; */
-  /* min-height: 600px;
-  max-height: auto; */
-  
-  /* padding: 0; */
-  /* margin: 0 auto; */
 }
-
 .menu ul li a {
-  /* border: 1px solid black; */
-  /* display: block; */
   color: var(--brown-color);
   text-decoration: none;
   transition: color 0.2s;
-  font-family: var(--main-font) ;
+  font-family: var(--light-font);
+  font-weight: 70;
+  font-size: 35px;
   text-transform: uppercase;
-  font-size: 41.395px;
-  /* padding: 0; */
 }
-
 .menu ul li a:hover {
   color: var(--brown-color);
 }
-
-/* .menu ul li:hover {
-  background: white;
-} */
-
 .menuEffects {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s, visibility 0.5s;
 }
-
 .menuEffects ul {
   transform: translateY(0%);
   transition: all 0.5s;
 }
-
 #menuToggle:checked ~ .menuEffects {
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s;
 }
-
 #menuToggle:checked ~ .menuEffects ul {
   opacity: 1;
 }
-
 #menuToggle:checked ~ .menuOpen .open {
   background-color: transparent;
 }
-
 #menuToggle:checked ~ .menuOpen .open:before {
   content: "";
-  /* background-color: white; */
   transform: rotate(45deg);
   position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
 }
-
 #menuToggle:checked ~ .menuOpen .open:after {
   content: "";
-  /* background-color: white; */
   transform: rotate(-45deg);
   position: relative;
   top: 0;
   right: 0;
   z-index: 1;
 }
-
 #menuToggle:not(:checked) ~ .menuEffects ul {
   transform: translateY(-30%);
 }
