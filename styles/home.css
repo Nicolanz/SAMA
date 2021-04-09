@@ -1,0 +1,41 @@
+
+/* home styles- File to define the home styles */
+
+/* header styles */
+header{
+    max-height: auto;
+    min-height: 150vh;
+    background-image: url("../images/healthy_food.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header nav+div{
+    margin-bottom: 150px;
+}
+header nav+div button{
+    min-height: 60px !important;
+    max-height: auto !important;
+    font-size: 25px !important;
+}
+
+/* media quieries header styles - 992px (break-point) */
+@media only screen and (max-width: 992px) {
+    header {
+        min-height: 100vh;
+    }
+    header nav+div{
+        margin-bottom: 50px;
+    }
+}
+/* media quieries header styles - 768px (break-point) */
+@media only screen and (max-width: 768px) {
+    header {
+        min-height: 80vh;
+    }
+    header nav+div button{
+        min-height: 70px;
+        max-height: auto;
+        font-size: 21px !important;
+    }
+}

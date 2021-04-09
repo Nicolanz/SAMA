@@ -57,7 +57,7 @@ nav .logos-nav svg{
 nav .menu .menuContent a svg{
   color: var(--brown-color);
 }
-nav div button{
+.button{
   font-size: var(--font-nav-size);
   color: var(--white-color);
   background-color: var(--blue-dark-color);
