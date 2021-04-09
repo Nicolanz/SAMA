@@ -1,0 +1,229 @@
+@font-face{
+  font-family: futura-pt_normal;
+  src: url("../fonts/futura-pt.ttf");
+}
+:root{
+  --font-nav-size: 11.9608px;
+  --brown-color: #877673;
+  --white-color: white;
+  --blue-dark-color: #9db9d5;
+  --main-font: futura-pt_normal;
+}
+*, body{
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  z-index: -2;
+}
+
+nav { 
+  min-height: 150px;
+  z-index: 1;
+}
+nav ul li a {
+  font-size: var(--font-nav-size);
+  font-family: var(--main-font);
+  color: var(--brown-color);
+  text-decoration: none;
+  
+}
+nav ul li a:hover{
+  color: var(--brown-color);
+}
+nav .logos-nav svg{
+  font-size: var(--font-nav-size);
+  color: var(--brown-color);
+}
+
+nav button{
+  font-size: var(--font-nav-size);
+  color: var(--white-color);
+  background-color: var(--blue-dark-color);
+  padding: 9.59168px 16.0181px;
+  width: 60%;
+}
+nav button:hover{
+  opacity: 0.5;
+}
+nav .logos-nav a svg{
+  width: 20px;
+  height: 20px;
+}
+
+@media only screen and (max-width: 768px){
+  nav .logos-nav a svg.cart{
+    opacity: 0.5;
+    width: 30px;
+    height:30px;
+  }
+}
+
+.open {
+  background-color: transparent;
+  width: 30px;
+  height: 4px;
+  display: block;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+  /* top: 8px; */
+}
+
+.open:before {
+  content: "";
+  background-color: var(--brown-color);
+  width: 30px;
+  height: 3px;
+  opacity: 0.5;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: 3px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.open:after {
+  content: "";
+  background-color: var(--brown-color);
+  width: 30px;
+  height: 3px;
+  opacity: 0.5;
+  display: block;
+  border-radius: 2px;
+  position: relative;
+  top: 13px;
+  transform: rotate(0deg);
+  transition: all 0.3s ease;
+}
+
+.menuOpen {
+  width: 24px;
+  height: 20px;
+  display: block;
+  /* padding: 15px; */
+  cursor: pointer;
+  /* float: right; */
+}
+
+
+
+.menu {
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  /* top: 0; */
+  left: 0;
+  max-height: auto;
+  background: #D6EEF4;
+  z-index:-1;
+}
+
+.menu label {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.menu .menuContent {
+  /* border: 2px solid brown; */
+  min-height: 100vh;
+  max-height: auto;
+  overflow: scroll;
+  margin-top: 150px;
+  /* overflow: hidden; */
+  /* margin-top: 130px; */
+  /* border: 1px solid red; */
+  /* top: 50%; */
+  /* font-size: 54px; */
+  /* text-align: center; */
+  /* padding-bottom: 20px; */
+  /* margin-top: -170px; */
+  /* width: 100%; */
+}
+
+.menu ul {
+  /* border: 1px solid white; */
+  list-style: none;
+  /* height: auto; */
+  /* min-height: 600px;
+  max-height: auto; */
+  
+  /* padding: 0; */
+  /* margin: 0 auto; */
+}
+
+.menu ul li a {
+  /* border: 1px solid black; */
+  /* display: block; */
+  color: var(--brown-color);
+  text-decoration: none;
+  transition: color 0.2s;
+  font-family: var(--main-font) ;
+  text-transform: uppercase;
+  font-size: 41.395px;
+  /* padding: 0; */
+}
+
+.menu ul li a:hover {
+  color: var(--brown-color);
+}
+
+/* .menu ul li:hover {
+  background: white;
+} */
+
+.menuEffects {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.menuEffects ul {
+  transform: translateY(0%);
+  transition: all 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
+
+#menuToggle:checked ~ .menuEffects ul {
+  opacity: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open {
+  background-color: transparent;
+}
+
+#menuToggle:checked ~ .menuOpen .open:before {
+  content: "";
+  /* background-color: white; */
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menuToggle:checked ~ .menuOpen .open:after {
+  content: "";
+  /* background-color: white; */
+  transform: rotate(-45deg);
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#menuToggle:not(:checked) ~ .menuEffects ul {
+  transform: translateY(-30%);
+}
