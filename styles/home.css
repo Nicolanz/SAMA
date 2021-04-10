@@ -1,6 +1,13 @@
 
 /* home styles- File to define the home styles */
 
+/* Definition of global variables */
+:root{
+    --blue-dark-color: #9db9d5;
+    --blue-light-color: #D6EEF4;
+    --blue-darker-color: #7eafc8;
+}
+
 /* header styles */
 header{
     max-height: auto;
@@ -19,6 +26,35 @@ header nav+div button{
     font-size: 25px !important;
 }
 
+
+/* happiness-section styles */
+body .happiness-section{
+    height: 165px;
+    background-color: var(--blue-dark-color);
+}
+body .happiness-section div img{
+    width: 100%;
+}
+
+/* products-section styles */
+body .products-section{
+    background: var(--blue-light-color);
+    min-height: 95vh;
+    max-height: auto;
+}
+body .products-section div .products-imgs{
+    width: 80%;
+    height: 55vh;
+}
+body .products-section div button{
+    width: 40% !important;
+    min-height: 50px !important;
+    max-height: auto !important;
+    font-size: 15px !important;
+    background-color: var(--blue-darker-color) !important;
+}
+
+
 /* media quieries header styles - 992px (break-point) */
 @media only screen and (max-width: 992px) {
     header {
@@ -27,15 +63,33 @@ header nav+div button{
     header nav+div{
         margin-bottom: 50px;
     }
+    /* happiness section */
+    body .happiness-section{
+        height: 130px;
+    }
 }
 /* media quieries header styles - 768px (break-point) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     header {
         min-height: 80vh;
     }
+    
     header nav+div button{
         min-height: 70px;
         max-height: auto;
         font-size: 21px !important;
+    }
+
+    /* products-section styles */
+    body .products-section div .products-imgs{
+        height: 80vh;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 576px) {
+    /* products-section styles */
+    body .products-section div .products-imgs{
+        width: 90%;
+        height: 55vh;
     }
 }
