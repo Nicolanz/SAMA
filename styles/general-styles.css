@@ -18,6 +18,7 @@
   --brown-dark-color: #616161;
   --white-color: white;
   --blue-dark-color: #9db9d5;
+  --blue-usual-color: #D6EEF4;;
   --main-font: futura-pt_normal;
   --light-font: futura-pt_light;
 }
@@ -40,6 +41,9 @@ body{
 nav { 
   min-height: 150px;
   z-index: 1;
+  top: 0;
+  background-color: transparent;
+  transition: top 0.3s;
 }
 nav ul li a {
   font-size: var(--font-nav-size);
@@ -137,7 +141,7 @@ nav .logos-nav a svg{
   position: fixed;
   left: 0;
   max-height: auto;
-  background: #D6EEF4;
+  background-color: var(--blue-usual-color);
   z-index:-1;
 }
 .menu label {
@@ -150,7 +154,7 @@ nav .logos-nav a svg{
   cursor: pointer;
 }
 .menu .menuContent {
-  height: 460px;
+  height: 60vh;
   margin-top: 150px;
   overflow: scroll;
 }
