@@ -54,6 +54,10 @@ nav ul li a {
 nav ul li a:hover{
   color: var(--brown-color);
 }
+nav div a img{
+  width:93px; 
+  height:93px;
+}
 nav .logos-nav svg{
   font-size: var(--font-nav-size);
   color: var(--brown-color);
@@ -83,12 +87,45 @@ nav .logos-nav a svg{
   height: 20px;
 }
 
+/* FOOTER STYLES */
+
+footer{
+  min-height: 100px;
+  background-color: var(--blue-dark-color);
+}
+footer ul li a{
+  color: var(--white-color);
+  font-family: var(--main-font);
+  font-size: 12px;
+}
+footer ul li a:hover{
+  color: var(--white-color);
+}
+footer span{
+  color: var(--white-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+}
+
+
+/* MEDIA QUERIES */
+
 /* media quieries nav styles - 992px (break-point) */
 @media only screen and (max-width: 992px){
   nav .logos-nav a svg.cart{
     opacity: 0.5;
     width: 30px;
     height:30px;
+  }
+}
+/* media quieries nav styles - 576px (break-point) */
+@media only screen and (max-width: 576px){
+  nav{
+    min-height: 120px;
+  }
+  header nav div a img{
+    width:80px; 
+    height:80px;
   }
 }
 

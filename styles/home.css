@@ -1,11 +1,24 @@
-
 /* home styles- File to define the home styles */
+
+/* import external fonts */
+@font-face{
+    font-family: futura-pt_normal;
+    src: url("../fonts/futura-pt.ttf");
+  }
+  @font-face{
+    font-family: futura-pt_light;
+    src: url("../fonts/futura-pt_light.ttf");
+  }
 
 /* Definition of global variables */
 :root{
     --blue-dark-color: #9db9d5;
     --blue-light-color: #D6EEF4;
     --blue-darker-color: #7eafc8;
+    --brown-color: #877673;
+    --white-color: white;
+    --main-font: futura-pt_normal;
+    --light-font: futura-pt_light;
 }
 
 /* header styles */
@@ -54,6 +67,37 @@ body .products-section div button{
     background-color: var(--blue-darker-color) !important;
 }
 
+/* paradise-day section styles */
+body .paradise-section {
+    background-image: url("../images/site.jpg");
+    filter: brightness(90%);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+body .paradise-section div img{
+    width: 30%;
+    height: 40%;
+}
+
+/* roots-section styles */
+body .roots-section{
+    min-height: 110vh;
+    margin-top: 100px;
+}
+body .roots-section div h3{
+    font-size: 23px;
+    font-family: var(--main-font);
+    color: var(--brown-color);
+    opacity: 0.9;
+}
+body .roots-section div p{
+    color: var(--brown-color);
+    font-family: var(--main-font);
+    font-size: 13px;
+    opacity: 0.7;
+}
+
 
 /* media quieries header styles - 992px (break-point) */
 @media only screen and (max-width: 992px) {
@@ -67,29 +111,43 @@ body .products-section div button{
     body .happiness-section{
         height: 130px;
     }
+    /* paradise-day section styles */
+    body .paradise-section div img{
+        width: 40%;
+        height: 40%;
+    }
 }
 /* media quieries header styles - 768px (break-point) */
 @media only screen and (max-width: 767px) {
     header {
         min-height: 80vh;
     }
-    
     header nav+div button{
         min-height: 70px;
         max-height: auto;
         font-size: 21px !important;
     }
-
     /* products-section styles */
     body .products-section div .products-imgs{
         height: 80vh;
         width: 70%;
     }
+    /* paradise-day section styles */
+    body .paradise-section div img{
+        width: 60%;
+        height: 40%;
+    }
 }
+/* media quieries header styles - 576px (break-point) */
 @media only screen and (max-width: 576px) {
     /* products-section styles */
     body .products-section div .products-imgs{
         width: 85%;
         height: 55vh;
+    }
+    /* paradise-day section styles */
+    body .paradise-section div img{
+        width: 80%;
+        height: 40%;
     }
 }
