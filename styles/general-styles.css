@@ -83,8 +83,8 @@ nav .logos-nav a svg{
   height: 20px;
 }
 
-/* media quieries nav styles - 768px (break-point) */
-@media only screen and (max-width: 768px){
+/* media quieries nav styles - 992px (break-point) */
+@media only screen and (max-width: 992px){
   nav .logos-nav a svg.cart{
     opacity: 0.5;
     width: 30px;
@@ -140,7 +140,6 @@ nav .logos-nav a svg{
   bottom: 0;
   position: fixed;
   left: 0;
-  max-height: auto;
   background-color: var(--blue-usual-color);
   z-index:-1;
 }
@@ -155,7 +154,6 @@ nav .logos-nav a svg{
 }
 .menu .menuContent {
   height: 60vh;
-  margin-top: 150px;
   overflow: scroll;
 }
 .menu ul {
