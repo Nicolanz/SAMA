@@ -5,7 +5,7 @@
     font-family: futura-pt_normal;
     src: url("../fonts/futura-pt.ttf");
   }
-  @font-face{
+@font-face{
     font-family: futura-pt_light;
     src: url("../fonts/futura-pt_light.ttf");
   }
@@ -53,11 +53,10 @@ body .happiness-section div img{
 body .products-section{
     background: var(--blue-light-color);
     min-height: 700px;
-    max-height: auto;
 }
 body .products-section div .products-imgs{
-    width: 80%;
-    height: 55%;
+    width: 70%;
+    /* height: 55%; */
 }
 body .products-section div button{
     width: 40% !important;
@@ -82,7 +81,7 @@ body .paradise-section div img{
 
 /* roots-section styles */
 body .roots-section{
-    min-height: 110vh;
+    min-height: 500px;
     margin-top: 100px;
 }
 body .roots-section div h3{
@@ -129,8 +128,7 @@ body .roots-section div p{
     }
     /* products-section styles */
     body .products-section div .products-imgs{
-        height: 80vh;
-        width: 70%;
+        height: 40vh;
     }
     /* paradise-day section styles */
     body .paradise-section div img{
@@ -140,12 +138,6 @@ body .roots-section div p{
 }
 /* media quieries header styles - 576px (break-point) */
 @media only screen and (max-width: 576px) {
-    /* products-section styles */
-    body .products-section div .products-imgs{
-        width: 85%;
-        height: 55vh;
-    }
-    /* paradise-day section styles */
     body .paradise-section div img{
         width: 80%;
         height: 40%;
