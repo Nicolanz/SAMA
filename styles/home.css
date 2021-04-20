@@ -25,7 +25,7 @@
 header{
     max-height: auto;
     min-height: 150vh;
-    background-image: url("../images/healthy_food.jpg");
+    background-image: url("../images/home_images/healthy_food.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -68,7 +68,7 @@ body .products-section div button{
 
 /* paradise-day section styles */
 body .paradise-section {
-    background-image: url("../images/site.jpg");
+    background-image: url("../images/home_images/site.jpg");
     filter: brightness(90%);
     background-position: center;
     background-size: cover;
