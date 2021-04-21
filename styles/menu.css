@@ -1,0 +1,90 @@
+
+/* menu styles - file to define the menu's styles*/
+
+/* import external fonts */
+@font-face{
+    font-family: futura-pt_normal;
+    src: url("../fonts/futura-pt.ttf");
+  }
+@font-face{
+    font-family: futura-pt_light;
+    src: url("../fonts/futura-pt_light.ttf");
+}
+
+/* global variables */
+:root{
+    --white-color: white;
+    --blue-dark-color: #9db9d5;
+    --blue-light-color: #D6EEF4;
+    --blue-darker-color: #7eafc8;
+    --brown-color: #877673;
+    --brown-dark-color: #616161;
+    --main-font: futura-pt_normal;
+}
+
+/* body styles */
+body {
+    background-color: var(--blue-light-color) !important;
+}
+
+/* Underlined menu tag */
+.menu-tag{
+    border-bottom: 1px solid var(--brown-color);
+    padding-bottom: 3px;
+}
+
+/* Online - menu styles */
+body .online-menu{
+    margin-top: 200px;
+}
+body .online-menu div div{
+    position: relative;
+    filter: brightness(95%);
+}
+body .online-menu div div button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 15px 24px;
+    cursor: pointer;
+    background-color: var(--blue-dark-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    text-align: center;
+    font-family: var(--main-font);
+}
+body .online-menu div div button:hover{
+    opacity: 0.7;
+}
+
+/* media quieries header styles - 768px (break-point) */
+@media only screen and (max-width: 767px){
+    /* online menu styles */
+    body .online-menu{
+        margin-top: 150px;
+    }
+    body .online-menu div div img{
+        width: 100%;
+        height:500px ;
+    }
+    body .online-menu div div{
+        margin: 15px 15px;
+    }
+}
+
+/* media quieries header styles - 576px (break-point) */
+@media only screen and (max-width: 576px){
+    /* online menu styles */
+    body .online-menu div div img{
+        width: 100%;
+        height:300px ;
+    }
+    body .online-menu div div{
+        margin: 17px 17px;
+    }
+    body .online-menu div div button{
+        padding: 10px 19px;
+    }
+}

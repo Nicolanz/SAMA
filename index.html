@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- GENERAL FILE FOR GLOBAL STYLES -->
     <link rel="stylesheet" href="styles/general-styles.css">
+    <!-- HOME STYLES -->
     <link rel="stylesheet" href="styles/home.css">
     <!-- BOOTSTRAP CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
@@ -20,13 +21,13 @@
       // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/ck3wqj3x'
       (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ck3wqj3x';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
     </script>
-    <title>SAMA | Home</title>
+    <title>SAMA</title>
 </head>
 <body>
   <!-- HEADER TAG -->
   <header class="d-flex d-row justify-content-center">
     <!-- NAV TAG -->
-    <nav class="d-flex flex-row justify-content-around align-items-center position-fixed col-12" id="navbar">
+    <nav class="d-flex flex-row justify-content-around align-items-center position-fixed col-12 navbar">
         <!-- PARTS TO DEFINE FULL SCREEN MENU -->
         <input type="checkbox" id="menuToggle" class="d-none "></input>
         <label for="menuToggle" class="menuOpen d-auto d-lg-none ml-5 ">
@@ -34,15 +35,14 @@
         </label>
         <!-- LOGO DIV -->
         <div class="mr-5 mr-lg-auto ml-auto ml-lg-5 order-1 order-lg-0">
-          <a href="#"><img src="images/global_images/logo.png" alt=""></a>
+          <a href="index.html"><img src="images/global_images/logo.png" alt=""></a>
         </div>
         <!-- UNORDERED LIST - PARTS OF THE WEBSITE -->
         <ul class="list-unstyled m-0 d-none d-lg-flex flex-row justify-content-around col-md-6  col-lg-5">
           <li><a href="#">ABOUT</a></li>
           <li><a href="#">LOCATIONS</a></li>
-          <li><a href="#">OUR MENU</a></li>
+          <li><a href="menu.html">OUR MENU</a></li>
           <li><a href="#">CAREERS</a></li>
-          <li><a href="#">PRESS</a></li>
           <li><a href="#">MERCH</a></li>
           <li><a href="#">FAQ</a></li>
         </ul>
@@ -66,9 +66,8 @@
             <ul class="m-0 p-0">
               <li><a href="#">ABOUT</a></li>
               <li><a href="#">LOCATIONS</a></li>
-              <li><a href="#">OUR MENU</a></li>
+              <li><a href="menu.html">OUR MENU</a></li>
               <li><a href="#">CAREERS</a></li>
-              <li><a href="#">PRESS</a></li>
               <li><a href="#">MERCH</a></li>
               <li><a href="#">FAQ</a></li>
             </ul>
@@ -137,12 +136,10 @@
     <ul class="m-0 p-0 list-unstyled d-flex flex-row col-9 col-md-7 justify-content-center flex-wrap">
       <li class="p-2" ><a href="#">LOCATIONS & HOURS OF OPERATION</a></li>
       <li class="p-2" ><a href="#">OUR STORY</a></li>
-      <li class="p-2" ><a href="#">OUR MENU</a></li>
-      <li class="p-2" ><a href="#">CATERING</a></li>
+      <li class="p-2" ><a href="menu.html">OUR MENU</a></li>
       <li class="p-2" ><a href="#">CONTACT</a></li>
       <li class="p-2" ><a href="#">FAQ</a></li>
       <li class="p-2" ><a href="#">SHOP</a></li>
-      <li class="p-2" ><a href="#">GIFT CARDS</a></li>
     </ul>
     <span class="m-0 p-0">SAMA 2021</span>
   </footer>
