@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- GENERAL FILE FOR GLOBAL STYLES -->
     <link rel="stylesheet" href="styles/general-styles.css">
-    <!-- MENU STYLES -->
-    <link rel="stylesheet" href="styles/menu.css">
+    <!-- ABOUT STYLES -->
+    <link rel="stylesheet" href="styles/about.css">
     <!-- BOOTSTRAP CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <!-- PURA VIDA MIAMI CHAT SCRIPTS -->
@@ -21,11 +21,11 @@
       // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/ck3wqj3x'
       (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ck3wqj3x';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
     </script>
-    <title>SAMA | Menu</title>
+    <title>SAMA | About</title>
 </head>
 <body>
-    <!-- HEADER SECTION TAG -->
-    <header>
+    <!-- HEADER SECTION -->
+    <header class="col-12">
         <!-- NAV TAG -->
         <nav class="d-flex flex-row justify-content-around align-items-center position-fixed col-12 navbar">
             <!-- PARTS TO DEFINE FULL SCREEN MENU -->
@@ -39,9 +39,9 @@
             </div>
             <!-- UNORDERED LIST - PARTS OF THE WEBSITE -->
             <ul class="list-unstyled m-0 d-none d-lg-flex flex-row justify-content-around col-md-6  col-lg-5">
-            <li><a href="about.html">ABOUT</a></li>
+            <li><a class="tag" href="about.html">ABOUT</a></li>
             <li><a href="locations.html">LOCATIONS</a></li>
-            <li><a class="tag" href="menu.html">OUR MENU</a></li>
+            <li><a href="menu.html">OUR MENU</a></li>
             <li><a href="#">CAREERS</a></li>
             <li><a href="#">MERCH</a></li>
             <li><a href="#">FAQ</a></li>
@@ -85,76 +85,12 @@
             </div>
             </div>
         </nav>
+        <img src="images/about_images/big_house.jpg" height="200px" alt="">
     </header>
-    <!-- ONLINE-MENU SECTION TAG -->
-    <section class="online-menu d-flex flex-row flex-wrap justify-content-center justify-content-md-evenly col-12">
-        <!-- LEFT DIV -->
-        <div class="col-11 col-md-5 d-flex flex-column justify-content-md-between align-items-center">
-            <!-- BUTTON AND IMAGE TARGETS -->
-            <div class="d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="images/menu_images/all_day_breakfast.jpg" alt="">
-                <button class="">ALL DAY BREAKFAST</button>
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="images/menu_images/smoothies.jpg" alt="">
-                <button class="">SUPERFOOD SMOOTHIES</button>
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="images/menu_images/acai_bowls.jpg" alt="">
-                <button class="">ACAI BOWLS</button>
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="images/menu_images/wraps.jpg" alt="">
-                <button class="">WRAPS & SANDWICHES</button>
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="images/menu_images/freshsalads.jpg" alt="">
-                <button class="">SALADS</button>
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="images/menu_images/snacks.jpg" alt="">
-                <button class="">SNACKS</button>
-            </div>
-        </div>
-        <!-- RIGHT DIV -->
-        <div class="col-11 col-md-5 d-flex flex-column align-items-center ">
-            <!-- BUTTON AND IMAGE TARGETS -->
-            <div class="mb-md-5 d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="images/menu_images/bowl.jpg" alt="">
-                <button class="">BOWLS</button>
-            </div>
-            <div class="mb-md-5 d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="images/menu_images/fresh_juice.jpg" alt="">
-                <button class="">FRESH JUICES & SHOTS</button>
-            </div>
-            <div class="mb-md-5 d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="images/menu_images/coffeeandtea.jpg" alt="">
-                <button class="">COFFEE & TEA</button>
-            </div>
-            <div class="mb-md-5 d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="images/menu_images/sweet_treats.jpg" alt="">
-                <button class="">SWEET TREATS</button>
-            </div>
-            <div class="d-flex justify-content-center align-items-center">
-                <img class="img-fluid" src="images/menu_images/kids_menu.jpg" alt="">
-                <button class="">KIDS MENU</button>
-            </div>
-        </div>
-    </section>
-    <!-- FOOTER SECTION -->
-    <footer class="col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
-        <ul class="m-0 p-0 list-unstyled d-flex flex-row col-9 col-md-7 justify-content-center flex-wrap">
-        <li class="p-2" ><a href="locations.html">LOCATIONS & HOURS OF OPERATION</a></li>
-        <li class="p-2" ><a href="about.html">OUR STORY</a></li>
-        <li class="p-2" ><a href="menu.html">OUR MENU</a></li>
-        <li class="p-2" ><a href="contact.html">CONTACT</a></li>
-        <li class="p-2" ><a href="#">FAQ</a></li>
-        <li class="p-2" ><a href="#">SHOP</a></li>
-        </ul>
-        <span class="m-0 p-0">SAMA 2021</span>
-    </footer>
+
+    <!-- IMPORT BOOTSTRAP - SCRIPT -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
     <!-- SCRIPT FOR SOME NAV FUNCTIONS  -->
     <script src="scripts/nav.js"></script>
-
 </body>
 </html>

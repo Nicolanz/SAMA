@@ -35,6 +35,12 @@ body{
   z-index: -2;
 }
 
+/* Underlined menu tag */
+.tag{
+  border-bottom: 1px solid var(--brown-color);
+  padding-bottom: 3px;
+}
+
 /* HEADER STYLES */
 
 /* nav styles */

@@ -1,0 +1,29 @@
+/* about styles- File to define the about section styles */
+
+/* import external fonts */
+@font-face{
+    font-family: futura-pt_normal;
+    src: url("../fonts/futura-pt.ttf");
+  }
+@font-face{
+    font-family: futura-pt_light;
+    src: url("../fonts/futura-pt_light.ttf");
+  }
+
+/* Definition of global variables */
+:root{
+    --blue-dark-color: #9db9d5;
+    --blue-light-color: #D6EEF4;
+    --blue-darker-color: #7eafc8;
+    --brown-color: #877673;
+    --white-color: white;
+    --main-font: futura-pt_normal;
+    --light-font: futura-pt_light;
+}
+
+/* header styles */
+header img{
+    width: 100%;
+    height: auto;
+    
+}

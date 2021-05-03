@@ -27,12 +27,6 @@ body {
     background-color: var(--blue-light-color) !important;
 }
 
-/* Underlined menu tag */
-.menu-tag{
-    border-bottom: 1px solid var(--brown-color);
-    padding-bottom: 3px;
-}
-
 /* Online - menu styles */
 body .online-menu{
     margin-top: 200px;
