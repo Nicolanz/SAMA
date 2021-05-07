@@ -17,7 +17,9 @@
   --brown-color: #877673;
   --brown-dark-color: #616161;
   --white-color: white;
-  --blue-dark-color: #9db9d5;
+  --white-usual-color: #eff4f8ef;
+  --green-extralight-color: #F0F9F5;
+  --green-dark-color: #5FD39F;
   --blue-usual-color: #D6EEF4;;
   --main-font: futura-pt_normal;
   --light-font: futura-pt_light;
@@ -63,6 +65,7 @@ nav ul li a:hover{
 nav div a img{
   width:93px; 
   height:93px;
+  border-radius: 50%;
 }
 nav .logos-nav svg{
   font-size: var(--font-nav-size);
@@ -74,12 +77,12 @@ nav .menu .menuContent a svg{
 .button{
   font-size: var(--font-nav-size);
   color: var(--white-color);
-  background-color: var(--blue-dark-color);
+  background-color: var(--green-dark-color);
   padding: 9.59168px 16.0181px;
   width: 60%;
 }
 nav .menu .menuContent button{
-  background-color: var(--brown-dark-color);
+  background-color: var(--green-dark-color);
   color: var(--white-color);
   font-size: 16px;
   padding: 15.36px 25.6512px;
@@ -96,20 +99,19 @@ nav .logos-nav a svg{
 /* FOOTER STYLES */
 
 footer{
-  min-height: 100px;
-  margin-top: 100px;
-  background-color: var(--blue-dark-color);
+  min-height: 150px;
+  background-color: var(--green-extralight-color);
 }
 footer ul li a{
-  color: var(--white-color);
+  color:var(--brown-color);
   font-family: var(--main-font);
   font-size: 12px;
 }
 footer ul li a:hover{
-  color: var(--white-color);
+  color: var(--brown-dark-color);
 }
 footer span{
-  color: var(--white-color);
+  color:var(--brown-color);
   font-family: var(--main-font);
   font-size: 14px;
 }
@@ -136,7 +138,7 @@ footer span{
   }
   /* footer media query styles */
   footer{
-    margin-top: 50px;
+    min-height: 200px;
   }
 }
 
@@ -188,7 +190,7 @@ footer span{
   bottom: 0;
   position: fixed;
   left: 0;
-  background-color: var(--blue-usual-color);
+  background-color: var(--white-usual-color);
   z-index:-1;
 }
 .menu label {

@@ -12,7 +12,10 @@
 
 /* Definition of global variables */
 :root{
-    --blue-dark-color: #9db9d5;
+    --pink-light-color: #FEF1EC;
+    --white-usual-color: #eff4f8;
+    --green-light-color: #B7DFDE;
+    --green-dark-color: #5FD39F;
     --blue-light-color: #D6EEF4;
     --blue-darker-color: #7eafc8;
     --brown-color: #877673;
@@ -43,7 +46,7 @@ header nav+div button{
 /* happiness-section styles */
 body .happiness-section{
     height: 165px;
-    background-color: var(--blue-dark-color);
+    background-color: var(--green-light-color);
 }
 body .happiness-section div img{
     width: 100%;
@@ -51,7 +54,7 @@ body .happiness-section div img{
 
 /* products-section styles */
 body .products-section{
-    background: var(--blue-light-color);
+    background: var(--white-color);
     min-height: 700px;
 }
 body .products-section div .products-imgs{
@@ -63,7 +66,7 @@ body .products-section div button{
     min-height: 50px !important;
     max-height: auto !important;
     font-size: 15px !important;
-    background-color: var(--blue-darker-color) !important;
+    background-color: var(--green-dark-color) !important;
 }
 
 /* paradise-day section styles */
@@ -82,7 +85,7 @@ body .paradise-section div img{
 /* roots-section styles */
 body .roots-section{
     min-height: 500px;
-    margin-top: 100px;
+    background-color: var(--pink-light-color);
 }
 body .roots-section div h3{
     font-size: 23px;
