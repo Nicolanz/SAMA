@@ -17,10 +17,8 @@
   --brown-color: #877673;
   --brown-dark-color: #616161;
   --white-color: white;
-  --white-usual-color: #eff4f8ef;
   --green-extralight-color: #F0F9F5;
   --green-dark-color: #5FD39F;
-  --blue-usual-color: #D6EEF4;;
   --main-font: futura-pt_normal;
   --light-font: futura-pt_light;
 }
@@ -65,7 +63,6 @@ nav ul li a:hover{
 nav div a img{
   width:93px; 
   height:93px;
-  border-radius: 50%;
 }
 nav .logos-nav svg{
   font-size: var(--font-nav-size);
