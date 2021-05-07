@@ -10,24 +10,16 @@
     <link rel="stylesheet" href="styles/menu.css">
     <!-- BOOTSTRAP CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-    <!-- PURA VIDA MIAMI CHAT SCRIPTS -->
-    <script crossorigin="anonymous" src="//assets.squarespace.com/universal/scripts-compressed/performance-a7b609eccb65e08a74111-min.en-US.js" defer=""></script>
-    <script>
-      window.intercomSettings = {
-        app_id: "ck3wqj3x"
-      };
-    </script>
-    <script>
-      // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/ck3wqj3x'
-      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/ck3wqj3x';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-    </script>
+    <!-- IMPORTING JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- TITLE -->
     <title>SAMA | Menu</title>
 </head>
 <body>
     <!-- HEADER SECTION TAG -->
     <header>
         <!-- NAV TAG -->
-        <nav class="d-flex flex-row justify-content-around align-items-center position-fixed col-12 navbar">
+        <nav class="d-flex flex-row justify-content-around align-items-center position-fixed col-12" id="navbar">
             <!-- PARTS TO DEFINE FULL SCREEN MENU -->
             <input type="checkbox" id="menuToggle" class="d-none "></input>
             <label for="menuToggle" class="menuOpen d-auto d-lg-none ml-5 ">
