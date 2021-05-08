@@ -14,22 +14,24 @@
 /* global variables */
 :root{
     --white-color: white;
-    --blue-dark-color: #9db9d5;
-    --blue-light-color: #D6EEF4;
-    --blue-darker-color: #7eafc8;
+    --pink-light-color: #FEF1EC;
+    --white-usual-color: #eff4f8ef;
+    --green-light-color: #B7DFDE;
+    --green-dark-color: #5FD39F;
     --brown-color: #877673;
     --brown-dark-color: #616161;
     --main-font: futura-pt_normal;
 }
 
-/* body styles */
-body {
-    background-color: var(--blue-light-color) !important;
+body{
+    background: var(--pink-light-color) !important ;
 }
-
+body header nav{
+    background: var(--white-usual-color) !important;
+}
 /* Online - menu styles */
 body .online-menu{
-    margin-top: 200px;
+    margin-top: 250px;
 }
 body .online-menu div div{
     position: relative;
@@ -43,7 +45,7 @@ body .online-menu div div button{
     -ms-transform: translate(-50%, -50%);
     padding: 15px 24px;
     cursor: pointer;
-    background-color: var(--blue-dark-color);
+    background-color: var(--green-dark-color);
     color: var(--white-color);
     border-radius: 5px;
     text-align: center;
@@ -51,6 +53,10 @@ body .online-menu div div button{
 }
 body .online-menu div div button:hover{
     opacity: 0.7;
+}
+
+body footer{
+    margin-top: 100px !important;
 }
 
 /* media quieries header styles - 768px (break-point) */
