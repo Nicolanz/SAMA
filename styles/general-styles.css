@@ -17,7 +17,7 @@
   --brown-color: #877673;
   --brown-dark-color: #616161;
   --white-color: white;
-  --green-extralight-color: #E3E6DB;
+  --green-extralight-color: #F0F2FA;
   --green-dark-color: #5FD39F;
   --main-font: futura-pt_normal;
   --light-font: futura-pt_light;
@@ -77,11 +77,15 @@ nav .menu .menuContent a svg{
   background-color: var(--green-dark-color);
   padding: 15px 24px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
 }
 nav .menu .menuContent button{
   background-color: var(--green-dark-color);
   color: var(--white-color);
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   padding: 15px 24px;
   font-size: 16px;
   padding: 15.36px 25.6512px;

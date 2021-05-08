@@ -15,7 +15,7 @@
 :root{
     --white-color: white;
     --pink-light-color: #FEF1EC;
-    --white-usual-color: #eff4f8ef;
+    --white-usual-color: #eff4f8;
     --green-light-color: #B7DFDE;
     --green-dark-color: #5FD39F;
     --brown-color: #877673;
@@ -24,10 +24,7 @@
 }
 
 body{
-    background: var(--pink-light-color) !important ;
-}
-body header nav{
-    background: var(--white-usual-color) !important;
+    background: var(--white-usual-color) !important ;
 }
 /* Online - menu styles */
 body .online-menu{
@@ -48,6 +45,8 @@ body .online-menu div div button{
     background-color: var(--green-dark-color);
     color: var(--white-color);
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     text-align: center;
     font-family: var(--main-font);
 }
