@@ -1,151 +1,77 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- GENERAL FILE FOR GLOBAL STYLES -->
-    <link rel="stylesheet" href="styles/general-styles.css">
-    <!-- HOME STYLES -->
-    <link rel="stylesheet" href="styles/home.css">
-    <!-- BOOTSTRAP CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-    <!-- IMPORTING JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- TITLE BAR ICON -->
     <link rel = "icon" href ="images/global_images/logo_sama.png" type = "image/x-icon">
-    <!-- TITLE -->
-    <title>Sama</title>
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <title>Sama Healthy Bar</title>
+
+    <style>
+      body, *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body div section{
+        min-height: 100vh;
+      }
+      body div .bg{
+        position: absolute;
+      }
+
+      @media only screen and (min-width: 992px){
+        body div .bg{
+          width: 0;
+          height: 0;
+          display: none;
+        }
+      }
+      /* media quieries nav styles - 576px (break-point) */
+      @media only screen and (max-width: 576px){
+        body div .bg{
+          width: 100%;
+          height: 100vh;
+        }
+      }
+
+
+    </style>
+
+
 </head>
 <body>
-  <!-- HEADER TAG -->
-  <header class="d-flex d-row justify-content-center">
-    <!-- NAV TAG -->
-    <nav class="d-flex flex-row justify-content-around align-items-center position-fixed col-12" id="navbar">
-        <!-- PARTS TO DEFINE FULL SCREEN MENU -->
-        <input type="checkbox" id="menuToggle" class="d-none "></input>
-        <label for="menuToggle" class="menuOpen d-auto d-lg-none ml-5 ">
-          <div class="open"></div>
-        </label>
-        <!-- LOGO DIV -->
-        <div class="mr-5 mr-lg-auto ml-auto ml-lg-5 order-1 order-lg-0">
-          <a href="index.html"><img class="rounded-circle" src="images/global_images/logo_sama.png" alt=""></a>
-        </div>
-        <!-- UNORDERED LIST - PARTS OF THE WEBSITE -->
-        <ul class="list-unstyled m-0 d-none d-lg-flex flex-row justify-content-around col-md-6  col-lg-5">
-          <li><a href="">MENU</a></li>
-          <li><a href="carta.html">CARTA</a></li>
-          <li><a href="">PIDE EN LINEA</a></li>
-          <li><a href="">LOCAL</a></li>
-          <li><a href="#">NOSOTROS</a></li>
-          <li><a href="">CONTACTANOS</a></li>
-        </ul>
-        <!-- CART AND INSTAGRAM ICONS -->
-        <span class="logos-nav p-0 m-0  d-flex flex-row justify-content-around align-items-center order-0 order-lg-1 ">
-          <a href="https://www.instagram.com/samahealthybar/?hl=es-la" class="d-none d-lg-flex align-items-center ml-3 mr-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-          </svg></a>
-          <!-- <a href="#" class="d-flex align-items-center ml-4 ml-lg-0"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-cart cart" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-          </svg></a> -->
-        </span>
-        <!-- MAIN NAV BUTTON -->
-        <div class=" d-none d-lg-flex justify-content-center col-md-3 col-lg-2 order-lg-2">
-          <button class="button" >MENU</button>
-        </div>
-        <!-- DIV DEFINE FULL SCREEN MENU -->
-        <div class="menu menuEffects d-flex align-items-center justify-content-center col-12">
-          <label for="menuToggle"></label>
-          <div class="menuContent mt-5 mt-md-0 d-flex flex-column justify-content-md-around col-12">
-            <ul class="ml-5 p-0">
-              <li><a href="">MENU</a></li>
-              <li><a href="carta.html">CARTA</a></li>
-              <li><a href="">PIDE EN LINEA</a></li>
-              <li><a href="">LOCAL</a></li>
-              <li><a href="#">NOSOTROS</a></li>
-              <li><a href="">CONTACTANOS</a></li>
-            </ul>
-            <div>
-              <a href="https://www.instagram.com/samahealthybar/?hl=es-la" target="_blank" class="ml-5">
-                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                </svg>
-              </a>
-            </div>
-            
-            <button class="mt-5 ml-5">
-              MENU
-            </button>
+  <div class="">
+    <img src="images/bg.jpg" class="bg" alt="">
+    <section class="d-flex justify-content-center align-items-center">
+      <div class="card" style="width: 18rem">
+          <img
+            src="images/global_images/logo_sama.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Menu</h5>
+            <p class="card-text">
+              Da click al link para ver el menu
+            </p>
           </div>
-        </div>
-    </nav>
-    <!-- HEADER BUTTON STYLES -->
-    <div class="mt-auto col-8 col-sm-6 col-md-4 d-flex justify-content-center "><button class="button shadow-lg">MENU</button></div>
-  </header>
-  <!-- HAPPINESS SECTION -->
-  <section class="happiness-section col-12 d-flex justify-content-center align-items-center">
-    <div class="col-11 col-sm-10 col-md-8 col-lg-7 "><img src="images/home_images/health_is_happiness.png" alt=""></div>
-  </section>
-  <!-- PRODUCTS SECTION -->
-  <section class="products-section col-12 d-flex flex-row justify-content-center justify-content-lg-around flex-wrap">
-    <!-- TARGETS OF PRODCUTS -->
-    <div class="mt-5 mt-lg-0 col-12 col-lg-4 d-flex flex-column flex-wrap justify-content-center align-items-center">
-      <img class="img-fluid products-imgs" src="images/home_images/lamp.jpg" alt="">
-      <button class="button shadow mt-5 mb-5 mb-lg-0 products-button">ENCUENTRANOS</button>
-    </div>
-    <div  class="col-12 col-lg-4 col-12 d-flex flex-column flex-wrap justify-content-center align-items-center">
-      <img class="img-fluid products-imgs" src="images/home_images/phonefood.gif" alt="">
-      <button class="button shadow mt-5 mb-5 mb-lg-0 products-button">PIDE EN LINEA</button>
-    </div>
-    <div  class="col-lg-4 col-12 d-flex flex-column flex-wrap justify-content-center align-items-center">
-      <img class="img-fluid products-imgs" src="images/home_images/salad.jpg" alt="">
-      <button class="button shadow mt-5 mb-5 mb-lg-0 products-button">MENU</button>
-    </div>
-  </section>
-  <!-- PARADISE DAY SECTION -->
-  <section class="paradise-section col-12 d-flex align-items-center">
-    <div class="col-12 d-flex justify-content-center align-items-center">
-      <img src="images/home_images/another_day_paradise.png" alt="">
-    </div>
-  </section>
-  <!-- ROOTS SECTION -->
-  <section class="roots-section col-12 d-flex flex-row flex-wrap justify-content-md-evenly justify-content-center">
-    <div class="mt-5 mb-5 col-10 col-md-5 d-flex justify-content-center">
-      <a href="#"><img class="img-fluid" src="images/home_images/family.jpg" alt=""></a>
-    </div>
-    <div class="mt-5 mt-md-0 col-10 col-sm-9 col-md-5 d-flex flex-column justify-content-lg-center  ">
-      <h3 class="mb-5">OUR ROOTS</h3>
-      <p class="mb-5">PURA VIDA WAS CREATED BY HUSBAND AND WIFE TO SERVE AS A PLACE FOR FRIENDS AND FAMILY TO GATHER AND EAT DELICIOUS
-        FOOD. WE’VE CREATED THE SPACES TO FEEL LIKE AN EXTENSION OF OUR OWN HOME AND A MENU THAT CAN BE EATEN ANY TIME OF THE
-        DAY. WE SOURCE LOCAL AND ORGANIC INGREDIENTS WHENEVER AVAILABLE. WHETHER YOU ARE THE HEALTH CONSCIOUS 20 SOMETHING,
-        THE ATHLETE, THE SOCCER MOM, DOG MOM, THE FOODIE, WHOEVER YOU ARE WE HAVE SOMETHING FOR YOU. 
-
-        WE STRIVE TO MAKE AN IMPACT IN THE COMMUNITY, NOT JUST BY PROVIDING HEALTHY FOOD, BUT BY CREATING A COMMUNITY OF PEOPLE
-        WHO VALUE QUALITY AND HEALTH. OUR DREAM OF CREATING REAL CAREERS FOR HUNDREDS OF PEOPLE IN OUR VERY OWN MIAMI COMMUNITY
-        HAS BEEN POSSIBLE BY OUR LOYAL CUSTOMERS AND WE ARE FOREVER GRATEFUL. </p>
-    </div>
-  </section>
-  
-  <div>
-    <a href="menu_sama.pdf" target="_blank">download pdf</a>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Healthy food</li>
+            <li class="list-group-item">Healthy Bar</li>
+            <li class="list-group-item">Smoothie Bowls</li>
+          </ul>
+          <div class="card-body">
+            <a href="menu_sama.pdf" target="_blank">Siguiente</a>
+          </div>
+      </div>
+    </section>
   </div>
 
-
-  <!-- FOOTER SECTION -->
-  <footer class="col-12 d-flex flex-column flex-wrap align-items-center justify-content-center">
-    <ul class="m-0 p-0 list-unstyled d-flex flex-row col-9 col-md-7 justify-content-center flex-wrap">
-      <li class="p-2"><a href="">MENU</a></li>
-      <li class="p-2"><a href="carta.html">CARTA</a></li>
-      <li class="p-2"><a href="">PIDE EN LINEA</a></li>
-      <li class="p-2"><a href="">LOCAL</a></li>
-      <li class="p-2"><a href="#">NOSOTROS</a></li>
-      <li class="p-2"><a href="">CONTACTANOS</a></li>
-    </ul>
-    <span class="m-0 p-0">SAMA</span>
-  </footer>
-  <!-- IMPORT BOOTSTRAP - SCRIPT -->
+      <!-- IMPORT BOOTSTRAP - SCRIPT -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
-  <!-- SCRIPT FOR SOME NAV FUNCTIONS  -->
-  <script src="scripts/nav.js"></script>
 </body>
 </html>
