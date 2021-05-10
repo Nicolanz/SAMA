@@ -17,10 +17,20 @@
         box-sizing: border-box;
       }
       body div section{
-        min-height: 80vh;
+        min-height: 100vh;
       }
       body div .bg{
         position: absolute;
+      }
+      div section div{
+        background-color: rgba(226, 250, 169, 0.342) !important;
+        /* color: white; */
+      }
+      div section div ul{
+        background-color: rgba(255, 255, 255, 0) !important;
+      }
+      div section div ul li{
+        background-color: rgba(255, 255, 255, 0) !important;
       }
       
 
@@ -46,22 +56,24 @@
 </head>
 <body>
   <div class="">
-    <!-- <img src="images/bg.jpg" class="bg" alt=""> -->
+    <img src="images/bg.jpg" class="bg" alt="">
     <section class="d-flex justify-content-center align-items-center">
       <div class="card rounded" style="width: 16rem">
-          <!-- <img
-            src="images/global_images/sama_logo.jpeg"
-            class="card-img-top"
-            height="100px"
-            alt="..."
-          /> -->
+          <div class="rounded" style="background-color: rgba(255, 255, 255, 0.76) !important;">
+            <img
+              src="images/global_images/sama_logo.png"
+              class="card-img-top"
+              height="80px"
+              alt="..."
+            />
+          </div>
           <div class="card-body">
-            <h4 class="card-title ">Sama Healthy Bar</h5>
+            <h1 class="card-title" style="color: rgb(23, 46, 43);">Menu</h5>
             <p class="card-text">
               Da click al link para ver el menu
             </p>
           </div>
-          <ul class="list-group list-group-flush">
+          <ul class="list-group list-group-flush bg-transparent">
             <li class="list-group-item" >Healthy food</li>
             <li class="list-group-item">Healthy Bar</li>
             <li class="list-group-item">Smoothie Bowls</li>
