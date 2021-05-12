@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+body, * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center ;
+    max-height: auto;
+
+}
+body section{
+    min-height: 100vh;
+    max-height: auto;
+}
+
+body .accordion{
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+body .accordion .logo{
+    background-color: rgba(255, 255, 255, 0.76) !important;
+}
+
+.accordion, .accordion-item, .accordion-item h2, .accordion-item h2 button{
+    background-color:  #0000004f !important;
+}
+.accordion .accordion-item h2 button, .accordion .accordion-item h2, .accordion .accordion-item h3{
+    color: rgb(136, 153, 147) !important;
+    font-family: 'Itim', cursive !important;
+}
+
+.accordion .accordion-item  p, .accordion .accordion-item  ul li{
+    color: white;
+    font-weight: lighter;
+}
+.accordion .accordion-item  p strong{
+    color: rgb(154, 173, 165) !important;
+    font-weight: bolder;
+}
+.accordion .accordion-item a{
+    color: rgb(136, 153, 147) !important;
+    
+}
+
+@media only screen and (min-width: 992px){
+    body{
+      background: white;
+    }
+}
