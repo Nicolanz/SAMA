@@ -13,10 +13,10 @@ body{
     -webkit-background-attachment: fixed;
     -moz-background-attachment: fixed;
     -o-background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    background-size: 100% auto;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size:100% autor;
     background-position: center ;
     height: 100vh;
 
@@ -43,7 +43,7 @@ body .accordion .logo{
 }
 
 .accordion .accordion-item  p, .accordion .accordion-item  ul li{
-    color: white;
+    color: #F1F5F8;
     font-weight: lighter;
 }
 .accordion .accordion-item  p strong{
