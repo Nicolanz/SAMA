@@ -9,20 +9,19 @@ body, * {
 body{
     background:url('../images/bg.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
     -webkit-background-attachment: fixed;
+    background-attachment: fixed;
     -moz-background-attachment: fixed;
     -o-background-attachment: fixed;
-    background-size: 100% auto;
-    -webkit-background-size: 100% auto;
-    -moz-background-size: 100% auto;
-    -o-background-size:100% autor;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-position: center ;
-    height: 100vh;
-
 }
 body section{
-    min-height: 100vh; 
+    min-height: 100vh;
+    max-height: auto;
 }
 
 body .accordion{
@@ -32,6 +31,9 @@ body .accordion{
 
 body .accordion .logo{
     background-color: rgba(255, 255, 255, 0.76) !important;
+}
+body .accordion .logo img{
+    height: 100px;
 }
 
 .accordion, .accordion-item, .accordion-item h2, .accordion-item h2 button{
@@ -59,4 +61,8 @@ body .accordion .logo{
     body{
       background: white;
     }
+    body .accordion .logo img{
+        height: 150px;
+    }
+    
 }
