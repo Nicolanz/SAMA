@@ -18,12 +18,11 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: center ;
-    max-height: auto;
+    height: 100vh;
 
 }
 body section{
-    min-height: 100vh;
-    max-height: auto;
+    min-height: 100vh; 
 }
 
 body .accordion{
