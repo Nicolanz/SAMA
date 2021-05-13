@@ -6,141 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- TITLE BAR ICON -->
     <link rel = "icon" href ="images/global_images/logo_sama.png" type = "image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="alternative/alt_menu.css">
+    <!-- BOOTSTRAP CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
     <title>Sama Healthy Bar</title>
+    
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+      body, *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-image: url('images/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      body div section{
+        min-height: 100vh;
+        max-height: auto;
+      }
+      /* body div .bg{
+        position: absolute;
+      } */
+      div section div{
+        background-color: #0000004f !important;
+        /* color: white; */
+      }
+      div section .card .card-body h4, div section .card .card-body p{
+
+        font-family: 'Itim', cursive !important;
+      }
+      div section div ul li{
+        background-color: #0000004f  !important;
+        font-family: 'Itim', cursive;
+        font-size: 17px;
+      }
+
+      a {
+        font-family: 'Ubuntu', sans-serif !important;
+        color: rgb(136, 153, 147) !important;
+      }
+
+      a:hover{
+        color: rgb(67, 139, 133) !important;
+      }
+      
+
+      @media only screen and (min-width: 992px){
+        body div .bg{
+          width: 0;
+          height: 0;
+          display: none;
+        }
+      }
+      /* media quieries nav styles - 576px (break-point) */
+      @media only screen and (max-width: 576px){
+        body div .bg{
+          width: 100%;
+          height: 100vh;
+        }
+      }
+
+
+    </style>
+
+
 </head>
 <body>
-  <section class="col-12 d-flex justify-content-center align-items-center">
-    <div class="accordion col-9 col-md-6 col-lg-4 rounded-lg " id="accordionExample">
+  <div class="">
+    <section class="d-flex justify-content-center align-items-center">
+      <div class="card rounded" style="width: 20rem">
 
-      <div class="accordion-item logo">
-        <img
-          src="images/global_images/sama_logo.png"
-          class="card-img-top"
-          alt="..."
-        />
-      </div>
-
-      <div class="accordion-item d-flex col-12 flex-row flex-wrap justify-content-center">
-        <h3 class="accordion-header col-11 my-2">Menu</h3>
-        <p class="mx-3">
-          Bienvenido a <strong class="fw-bold">Sama Healthy Bar</strong>. Da click <a class="text-decoration-none fw-bold" href="menu_sama.pdf" target="_blank">aqui</a>
-        para conocer nuestro menu completo
-        </p>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            Entradas <span class="glyphicon glyphicon-menu-down"></span>
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut minus blanditiis beatae enim, molestiae sit dicta
-              rerum minima distinctio quae? Nesciunt ipsum, tempora nihil velit molestiae sequi impedit temporibus?</p>
+          <div class="rounded" style="background-color: rgba(255, 255, 255, 0.76) !important;">
+            <img
+              src="images/global_images/sama_logo.png"
+              class="card-img-top"
+              height="120px"
+              alt="..."
+            />
           </div>
-        </div>
-      </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Tostadas <span class="glyphicon glyphicon-menu-down"></span>
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ut minus blanditiis beatae enim, molestiae sit dicta
-              rerum minima distinctio quae? Nesciunt ipsum, tempora nihil velit molestiae sequi impedit temporibus?</p>
+          <div class="card-body">
+            <h4 class="card-title" style="color: rgb(136, 153, 147); font-family: 'Ubuntu', sans-serif !important;">Menu</h4>
+            <p class="card-text" style="color: white; font-size: small;">
+              Da click al link para ver el menu
+            </p>
           </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Smoothie Bowls
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda sit delectus a similique tenetur!
-              Commodi aspernatur vitae ratione perspiciatis doloribus quos, esse tempore iste aliquid aliquam illo, sit quam.</p>
+          <!-- <ul class="list-group list-group-flush bg-transparent">
+            <li class="list-group-item" style="color: rgb(136, 153, 147);">Healthy food</li>
+            <li class="list-group-item" style="color: rgb(136, 153, 147);">Smoothie Bowls</li>
+            <li class="list-group-item" style="color: rgb(136, 153, 147);">Healthy Bar</li>
+          </ul> -->
+          <div class="card-body">
+            <a href="menu_sama.pdf" class="text-decoration-none color-success"  target="_blank">Siguiente</a>
           </div>
-        </div>
       </div>
+    </section>
+  </div>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            Sandwiches
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda sit delectus a </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingFive">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            Bebidas
-          </button>
-        </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <ul class="m-2 p-2">
-              <li>Uno</li>
-              <li>Dos</li>
-              <li>Tres</li>
-              <li>Cuatro</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSix">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-            Infusiones & Shots
-          </button>
-        </h2>
-        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <ul class="m-2 p-2">
-              <li>Uno</li>
-              <li>Dos</li>
-              <li>Tres</li>
-              <li>Cuatro</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item d-flex col-12 flex-row">
-        <h3 class="accordion-header col-11 my-4 m-auto"> <a class="text-decoration-none" href="menu_sama.pdf" target="_blank">Siguiente</a> </h3>
-      </div>
-    </div>
-  </section>
+      <!-- IMPORT BOOTSTRAP - SCRIPT -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
 </body>
 </html>
-
-<!-- <div class="accordion-item">
-  <h2 class="accordion-header" id="headingOne">
-    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-      Accordion Item #1
-    </button>
-  </h2>
-  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-    <div class="accordion-body">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident suscipit tempora aut voluptatem ab illo
-        consequatur ea maiores veniam autem repudiandae, placeat accusantium blanditiis esse, dolorem consequuntur sint quo
-        nemo?</p>
-    </div>
-  </div>
-</div> -->
