@@ -4,6 +4,7 @@
 @font-face{
     font-family: futura-pt_normal;
     src: url("../fonts/futura-pt.ttf");
+
   }
 @font-face{
     font-family: futura-pt_light;
@@ -19,11 +20,4 @@
     --white-color: white;
     --main-font: futura-pt_normal;
     --light-font: futura-pt_light;
-}
-
-/* header styles */
-header img{
-    width: 100%;
-    height: auto;
-    
 }
